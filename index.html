@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Set and Get Timezone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <script> 
+        // usa time 
+        var usaTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
+        usaTime = new Date(usaTime);
+        console.log('USA time: ' + usaTime.toLocaleString());
+        document.write("<h2>USA time: " + usaTime.toLocaleString() + "</h2>");
+    
+        // bangladesh time
+        var bdTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Dhaka"});
+        bdTime = new Date(bdTime);
+        console.log('BD time: '+bdTime.toLocaleString());
+        document.write("<h2>BD time: " + bdTime.toLocaleString() + "</h2>");
+    </script>
+    
+
+</body>
+</html>
